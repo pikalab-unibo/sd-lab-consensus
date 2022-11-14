@@ -5,7 +5,7 @@ on:
       - main
       - master
 env:
-  LATEX_ROOT: sd-lab-template
+  LATEX_ROOT: sd-lab-consensus
 jobs:
   compile:
     runs-on: ubuntu-latest
