@@ -109,7 +109,7 @@
 
     \begin{block}{Famous consensus algorithms}
         \begin{itemize}
-            \item Paxos \cite{paxos} $\rightarrow$ synchronous, crash fault tolerant, complex to understand;
+            \item Paxos \cite{paxos} $\rightarrow$ synchronous, crash fault tolerant, difficult to understand;
             %
             \item Raft \cite{raft} $\rightarrow$ synchronous, crash fault tolerant, easy to understand;
             %
@@ -245,7 +245,7 @@
     
     \begin{block}{Installation}
         \begin{itemize}
-            \item download release from \href{https://github.com/etcd-io/etcd/releases/}{github.com/etcd-io/etcd/releases/}
+            \item download release from \alert{\href{https://github.com/etcd-io/etcd/releases/}{github.com/etcd-io/etcd/releases}}
             %
             \item unpack the archive
             %
@@ -258,11 +258,11 @@
     \end{block}
     
     \begin{block}{Docker images}
-        There are public images on the Internet, for instance \href{https://hub.docker.com/r/bitnami/etcd/}{hub.docker.com/r/bitnami/etcd/}.
+        There are public images on the Internet, for instance \alert{\href{https://hub.docker.com/r/bitnami/etcd/}{hub.docker.com/r/bitnami/etcd}}.
         \begin{itemize}
-            \item \texttt{> docker pull bitnami/etcd:3}
+            \item \texttt{> docker pull bitnami/etcd}
             %
-            \item \texttt{> docker run -d -it --rm --name etcd-server-1 ... bitnami/etcd:3}
+            \item \texttt{> docker run -d -it --rm --name etcd-server-1 ... bitnami/etcd}
         \end{itemize}
     \end{block}
 
