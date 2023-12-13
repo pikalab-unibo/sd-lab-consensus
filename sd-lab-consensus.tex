@@ -64,7 +64,7 @@
     	\begin{itemize}
             \item CAP theorem, what do we choose?;
             %
-    		\item ``Impossibility of distributed consensus with one faulty process'' also known as the FLP theorem \cite{FLP}, how do we make it possible?\\
+    		\item ``Impossibility of distributed consensus with one faulty process'' also known as the FLP theorem \ccite{FLP}, how do we make it possible?\\
             $\rightarrow$ asynchronous deterministic protocols are impossible;
             %
             \item check slides C2 -- The Problem of Consensus in Distributed Systems if you don't remember.
@@ -99,7 +99,7 @@
         \begin{itemize}
             \item \alert{Crash} fault tolerant $\rightarrow$ a node stop working or its messages are not delivered;
             %
-            \item \alert{Byzantine} fault tolerant (BFT) $\rightarrow$ a node start behaving unpredictably (it can also be malicious).
+            \item \alert{Byzantine} fault tolerant (BFT)~\ccite{byzantine1982} $\rightarrow$ a node start behaving unpredictably (it can also be malicious).
             %
             Theoretical limit of tolerance is $N \ge 3F + 1$.
         \end{itemize}
@@ -109,13 +109,13 @@
 
     \begin{block}{Famous consensus algorithms}
         \begin{itemize}
-            \item Paxos \cite{paxos} $\rightarrow$ synchronous, crash fault tolerant, difficult to understand;
+            \item Paxos \ccite{paxos} $\rightarrow$ synchronous, crash fault tolerant, difficult to understand;
             %
-            \item Raft \cite{raft} $\rightarrow$ synchronous, crash fault tolerant, easy to understand;
+            \item Raft \ccite{raft} $\rightarrow$ synchronous, crash fault tolerant, easy to understand;
             %
-            \item SINTRA \cite{sintra} $\rightarrow$ asynchronous, byzantine fault tolerant, bits/transaction increase $O(N^2)$;
+            \item SINTRA \ccite{sintra} $\rightarrow$ asynchronous, byzantine fault tolerant, bits/transaction increase $O(N^2)$;
             %
-            \item HBBFT \cite{hbbft} $\rightarrow$  asynchronous, byzantine fault tolerant, bits/transaction increase $O(N)$.
+            \item HBBFT \ccite{hbbft} $\rightarrow$  asynchronous, byzantine fault tolerant, bits/transaction increase $O(N)$.
         \end{itemize}
     \end{block}
 \end{frame}
@@ -398,8 +398,8 @@
 %%%%
 \setbeamertemplate{page number in head/foot}{}
 %/////////
-\begin{frame}[c,noframenumbering]{\refname}
-%\begin{frame}[t,allowframebreaks,noframenumbering]{\refname}
+%\begin{frame}[c,noframenumbering]{\refname}
+\begin{frame}[t,allowframebreaks,noframenumbering]{\refname}
 %	\tiny
 	\scriptsize
 %	\footnotesize
